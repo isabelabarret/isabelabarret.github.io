@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isabela Barreto | Portfólio</title>
-    <meta name="description" content="Portfólio de Isabela Barreto, desenvolvedora e criativa.">
+    <title>Isabela Barreto | Sustentabilidade, Inteligência de Dados & Engenharia</title>
+    <meta name="description" content="Portfólio interdisciplinar de Isabela Barreto: Sustentabilidade Corporativa (ESG), Engenharia Ambiental e Urbana, Ciências Biológicas e Ciência de Dados aplicada.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="bg-glow"></div>
     <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
     
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="container nav-content">
             <a href="#" class="logo">IB<span>.</span></a>
             <ul class="nav-links">
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#ufabc">O Modelo UFABC</a></li>
+                <li><a href="#pilares">Pilares</a></li>
+                <li><a href="#projetos">Projetos & Entregas</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#governanca">Liderança & Extensão</a></li>
                 <li><a href="#contato" class="btn-primary-outline">Contato</a></li>
             </ul>
-            <div class="menu-toggle" id="mobile-menu">
+            <div class="menu-toggle" id="mobile-menu" aria-label="Abrir menu de navegação">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -31,127 +36,630 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero">
         <div class="container hero-content">
-            <h2 class="greeting reveal">Olá, eu sou</h2>
-            <h1 class="title reveal delay-1">Isabela Barreto</h1>
-            <h3 class="subtitle reveal delay-2">Transformando ideias em <span class="gradient-text">experiências digitais</span>.</h3>
+            <div class="badge-group reveal">
+                <span class="hero-badge"><span class="pulse-dot"></span> Perfil Interdisciplinar • UFABC</span>
+                <span class="hero-badge">Sustentabilidade & ESG</span>
+                <span class="hero-badge">Inteligência de Dados</span>
+            </div>
+            
+            <h1 class="title reveal delay-1">
+                Isabela <span class="gradient-text">Barreto</span>
+            </h1>
+            
+            <h2 class="subtitle reveal delay-2">
+                Conectando sustentabilidade corporativa, rigor científico e inteligência analítica para soluções de alto impacto.
+            </h2>
+            
             <p class="description reveal delay-3">
-                Sou apaixonada por criar soluções inovadoras, designs elegantes e código eficiente. 
-                Bem-vindo ao meu espaço criativo.
+                Graduada em <strong>Ciência e Tecnologia</strong> e graduanda em <strong>Engenharia Ambiental e Urbana</strong> e <strong>Ciências Biológicas</strong> pela UFABC. Experiência prática com gestão de logística reversa nacional (R$ 3M em orçamento gerido), modelagem estatística preditiva (R/GLMM), geoprocessamento territorial (QGIS) e conformidade socioambiental.
             </p>
+            
             <div class="hero-actions reveal delay-4">
-                <a href="#projetos" class="btn-primary">Ver Projetos</a>
-                <a href="#contato" class="btn-secondary">Falar Comigo</a>
+                <a href="#projetos" class="btn-primary">Explorar Entregas & Cases</a>
+                <a href="#ufabc" class="btn-secondary">Entenda Meu Diferencial</a>
+                <a href="#contato" class="btn-primary-outline">Falar Comigo</a>
+            </div>
+
+            <!-- Key metrics bar -->
+            <div class="hero-metrics-bar glass-panel reveal delay-4">
+                <div class="metric-item">
+                    <span class="metric-number">R$ 3M</span>
+                    <span class="metric-desc">Orçamento anual gerido em Logística Reversa</span>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric-item">
+                    <span class="metric-number">12 Estados</span>
+                    <span class="metric-desc">Operação coordenada com 16 fornecedores & cooperativas</span>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric-item">
+                    <span class="metric-number">3 Áreas</span>
+                    <span class="metric-desc">Integração entre BC&T, Eng. Ambiental e Biologia</span>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric-item">
+                    <span class="metric-number">FAPESP</span>
+                    <span class="metric-desc">Pesquisa científica em mudanças climáticas com GLMM</span>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
+        <!-- Sobre Mim Section -->
         <section id="sobre" class="section">
             <div class="container">
-                <h2 class="section-title reveal">Sobre Mim</h2>
-                <div class="about-grid reveal delay-1">
-                    <div class="about-text">
-                        <p>Sou uma profissional focada em tecnologia e design, buscando sempre a melhor experiência para o usuário. Tenho experiência no desenvolvimento de projetos criativos e funcionais.</p>
-                        <p>Acredito no aprendizado contínuo e na colaboração para alcançar resultados excepcionais.</p>
-                    </div>
-                    <div class="about-stats glass-panel">
-                        <div class="stat">
-                            <span class="stat-number">+2</span>
-                            <span class="stat-label">Anos de Experiência</span>
+                <div class="section-header reveal">
+                    <span class="section-tag">Perfil & Visão</span>
+                    <h2 class="section-title">Sobre Mim</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text glass-panel reveal delay-1">
+                        <p>
+                            Minha trajetória profissional é pautada pela <strong>interdisciplinaridade aplicada</strong>: acredito que os maiores desafios ambientais, climáticos e corporativos de hoje não podem ser resolvidos sob a ótica de uma única disciplina.
+                        </p>
+                        <p>
+                            Uno o rigor analítico das <strong>ciências exatas e dados</strong> (Python, R, SQL, Power BI e AWS) à profundidade das <strong>ciências biológicas e engenharia urbana</strong> (diagnóstico ecológico, dinâmicas de uso do solo, saneamento e geoprocessamento em QGIS).
+                        </p>
+                        <p>
+                            No ambiente corporativo e de pesquisa, atuo desde a modelagem estatística de grandes bancos de dados e inventários de emissões (GHG Protocol Escopos 1, 2 e 3) até a gestão operacional de projetos de economia circular com stakeholders de ponta a ponta (cooperativas, varejistas, fornecedores e executivos).
+                        </p>
+                        
+                        <div class="focus-pills">
+                            <span class="focus-pill">Economia Circular & Logística Reversa</span>
+                            <span class="focus-pill">Inventários GEE (GHG Protocol)</span>
+                            <span class="focus-pill">Modelagem Estatística em R (GLMM)</span>
+                            <span class="focus-pill">Planejamento Urbano & QGIS</span>
+                            <span class="focus-pill">Governança & Gestão SAP</span>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">+10</span>
-                            <span class="stat-label">Projetos Concluídos</span>
+                    </div>
+
+                    <div class="academic-cards reveal delay-2">
+                        <div class="academic-card glass-panel">
+                            <div class="academic-badge done">Concluído (09/22 - 05/26)</div>
+                            <h3>Bacharelado em Ciência e Tecnologia (BC&T)</h3>
+                            <p class="institution">Universidade Federal do ABC (UFABC)</p>
+                            <p class="academic-desc">Formação interdisciplinar com base densa em matemática avançada, simulação computacional, física, química, energia e epistemologia.</p>
+                        </div>
+
+                        <div class="academic-card glass-panel">
+                            <div class="academic-badge in-progress">Em Andamento</div>
+                            <h3>Engenharia Ambiental e Urbana</h3>
+                            <p class="institution">Universidade Federal do ABC (UFABC)</p>
+                            <p class="academic-desc">Foco em planejamento territorial, recursos hídricos, saneamento, tecnologias descentralizadas, geoprocessamento e cidades sustentáveis.</p>
+                        </div>
+
+                        <div class="academic-card glass-panel">
+                            <div class="academic-badge in-progress">Em Andamento</div>
+                            <h3>Ciências Biológicas (Bacharelado)</h3>
+                            <p class="institution">Universidade Federal do ABC (UFABC)</p>
+                            <p class="academic-desc">Ênfase em ecologia, bioindicadores, impactos das mudanças climáticas, biologia experimental e modelagem populacional.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- O Modelo UFABC (Venda da Instituição e Interdisciplinaridade) -->
+        <section id="ufabc" class="section ufabc-section">
+            <div class="container">
+                <div class="ufabc-container glass-panel reveal">
+                    <div class="ufabc-badge">O Diferencial Institucional</div>
+                    <h2 class="ufabc-title">Por que uma formação interdisciplinar pela <span class="gradient-text">UFABC</span> é um diferencial estratégico?</h2>
+                    
+                    <p class="ufabc-lead">
+                        A <strong>Universidade Federal do ABC (UFABC)</strong> foi concebida com um dos projetos pedagógicos mais inovadores do ensino superior brasileiro, inspirado no <strong>Processo de Bolonha</strong> e nas principais instituições de vanguarda mundiais.
+                    </p>
+
+                    <div class="ufabc-features-grid">
+                        <div class="ufabc-feature">
+                            <div class="feature-icon">⚡</div>
+                            <h3>Fim dos Departamentos Estanques</h3>
+                            <p>Em vez de grades curriculares engessadas e isoladas, a UFABC estrutura seu conhecimento em <strong>grandes eixos integradores</strong> (Energia, Processos de Transformação, Representação e Simulação, Informação e Comunicação, Estrutura da Matéria e Humanidades).</p>
+                        </div>
+
+                        <div class="ufabc-feature">
+                            <div class="feature-icon">🧠</div>
+                            <h3>Capacidade de Solução de Problemas Complexos</h3>
+                            <p>O ingresso inicial pelo <strong>Bacharelado em Ciência e Tecnologia (BC&T)</strong> garante uma formação quantitativa e computacional avançada antes da especialização nas engenharias e bacharelados. Isso constrói um profissional versátil, resiliente e autodidata.</p>
+                        </div>
+
+                        <div class="ufabc-feature">
+                            <div class="feature-icon">🔄</div>
+                            <h3>Perfil T-Shaped / Pi-Shaped no Mercado</h3>
+                            <p>Ao transitar da base científica para a <strong>Engenharia Ambiental & Urbana</strong> e as <strong>Ciências Biológicas</strong>, consigo dialogar com a mesma naturalidade entre desenvolvedores de dados, engenheiros de campo, pesquisadores científicos e executivos C-level.</p>
+                        </div>
+
+                        <div class="ufabc-feature">
+                            <div class="feature-icon">⏱️</div>
+                            <h3>Dinamismo em Regime Quadrimestral</h3>
+                            <p>Com três períodos letivos intensivos por ano, o aluno da UFABC desenvolve disciplina de alta performance, agilidade de entrega, gestão de prioridades e adaptação constante a novos desafios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pilares de Atuação -->
+        <section id="pilares" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Visão Estratégica</span>
+                    <h2 class="section-title">Pilares de Atuação</h2>
+                    <p class="section-subtitle">Áreas em que integro conhecimento técnico, dados e gestão para gerar valor concreto.</p>
+                </div>
+
+                <div class="pillars-grid">
+                    <!-- Pilar 1 -->
+                    <div class="pillar-card glass-panel reveal">
+                        <div class="pillar-number">01</div>
+                        <h3>Sustentabilidade Corporativa & ESG</h3>
+                        <p>Gestão e implementação de estratégias de sustentabilidade corporativa baseadas em frameworks globais (GRI, SASB/ISSB, TCFD, GHG Protocol). Vivência com gestão de logística reversa de grande porte, viabilidade de PEVs e engajamento da cadeia de valor.</p>
+                        <ul class="pillar-list">
+                            <li>Inventários GEE (Escopos 1, 2 e 3)</li>
+                            <li>Economia Circular & Operação Nacional</li>
+                            <li>Relatórios de Sustentabilidade & Métricas ESG</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pilar 2 -->
+                    <div class="pillar-card glass-panel reveal delay-1">
+                        <div class="pillar-number">02</div>
+                        <h3>Data Science & Modelagem Quantitativa</h3>
+                        <p>Tradução de dados brutos e complexos em inteligência acionável para tomada de decisão. Da modelagem estatística robusta em pesquisa científica à automação de pipelines analíticos e dashboards executivos.</p>
+                        <ul class="pillar-list">
+                            <li>Modelos Generalizados Mistos (GLMM) em R</li>
+                            <li>Python & SQL para manipulação e ETL</li>
+                            <li>Power BI, Power Query & Modelagem em Excel</li>
+                            <li>Nuvem AWS (Lambda, S3, RDS)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pilar 3 -->
+                    <div class="pillar-card glass-panel reveal delay-2">
+                        <div class="pillar-number">03</div>
+                        <h3>Engenharia Territorial & Geoprocessamento</h3>
+                        <p>Análise espacial aplicada ao planejamento urbano sustentável, gestão de recursos hídricos e saneamento básico. Integração de restrições ambientais, risco físico e vulnerabilidade social para suporte a intervenções urbanas.</p>
+                        <ul class="pillar-list">
+                            <li>Análises Espaciais em QGIS & ArcGIS</li>
+                            <li>Construção de Matrizes de Aptidão Territorial</li>
+                            <li>Tecnologias descentralizadas de tratamento de efluentes</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pilar 4 -->
+                    <div class="pillar-card glass-panel reveal delay-3">
+                        <div class="pillar-number">04</div>
+                        <h3>Governança, Negócios & Liderança</h3>
+                        <p>Controle financeiro rigoroso, conformidade com políticas públicas e normas institucionais, liderança em órgãos deliberativos universitários e gestão de campanhas estratégicas de comunicação.</p>
+                        <ul class="pillar-list">
+                            <li>Controle orçamentário e fluxo via SAP</li>
+                            <li>Compliance & Segurança Jurídica</li>
+                            <li>Representação em Conselhos Superiores da UFABC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos e Entregas em Destaque -->
         <section id="projetos" class="section">
             <div class="container">
-                <h2 class="section-title reveal">Projetos em Destaque</h2>
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card glass-panel reveal">
-                        <div class="project-image" style="background: linear-gradient(135deg, #FF6B6B, #FF8E53)"></div>
-                        <div class="project-info">
-                            <div class="project-tags">
-                                <span class="tag">Design</span>
-                                <span class="tag">Web</span>
-                            </div>
-                            <h3 class="project-title">E-commerce Moderno</h3>
-                            <p class="project-desc">Uma plataforma de e-commerce completa, com design focado na conversão e experiência fluida.</p>
-                            <a href="#" class="project-link">Ver Detalhes &rarr;</a>
+                <div class="section-header reveal">
+                    <span class="section-tag">Portfólio de Entregas</span>
+                    <h2 class="section-title">Cases & Projetos de Impacto</h2>
+                    <p class="section-subtitle">Mais do que experiências listadas: o contexto, o desafio, as ferramentas e o impacto tangível de cada entrega.</p>
+                </div>
+
+                <!-- Filtros de Projetos -->
+                <div class="project-filters reveal">
+                    <button class="filter-btn active" data-filter="all">Todos os Projetos</button>
+                    <button class="filter-btn" data-filter="esg">Sustentabilidade & ESG</button>
+                    <button class="filter-btn" data-filter="dados">Dados & Pesquisa Científica</button>
+                    <button class="filter-btn" data-filter="urbano">Engenharia & Geoprocessamento</button>
+                    <button class="filter-btn" data-filter="governanca">Governança & Processos</button>
+                </div>
+
+                <div class="projects-detail-grid">
+                    
+                    <!-- Case 1: Grupo 3corações -->
+                    <div class="case-card glass-panel reveal" data-category="esg">
+                        <div class="case-badge-row">
+                            <span class="badge-role">Estagiária de Logística Reversa</span>
+                            <span class="badge-time">07/2025 - 08/2026</span>
+                            <span class="badge-tag esg">ESG & Economia Circular</span>
+                        </div>
+                        <h3 class="case-title">Gestão Nacional de Logística Reversa de Cápsulas & Economia Circular</h3>
+                        <div class="case-org">Grupo 3corações • Desenvolvimento Sustentável</div>
+                        
+                        <div class="case-section">
+                            <h4 class="case-heading">Desafio & Escopo:</h4>
+                            <p>Assegurar a sustentabilidade e operação contínua do programa de logística reversa de cápsulas de café, coordenando fluxos logísticos complexos entre 16 fornecedores de serviços e cooperativas de reciclagem em 12 estados brasileiros, além de viabilizar a expansão para novos pontos e redes de varejo.</p>
+                        </div>
+
+                        <div class="case-section">
+                            <h4 class="case-heading">Entregas & Soluções Realizadas:</h4>
+                            <ul class="case-bullets">
+                                <li><strong>Gestão Orçamentária de Alto Impacto:</strong> Controle orçamentário anual de R$ 3.000.000,00, fechamentos financeiros, emissão de pedidos e lançamento de notas fiscais via <strong>SAP</strong>, identificando pontos de redução de custos logísticos.</li>
+                                <li><strong>Coordenação Multissetorial (12 Estados):</strong> Gestão operacional de ponta a ponta dos fluxos de coleta, armazenagem, movimentação de resíduos e triagem junto a cooperativas e 16 prestadores de serviços.</li>
+                                <li><strong>Suporte Analítico à Tomada de Decisão:</strong> Estruturação, consolidação e acompanhamento de indicadores de performance (KPIs) e custos do programa para reuniões estratégicas com lideranças e múltiplos stakeholders.</li>
+                                <li><strong>Estudos de Viabilidade Territorial:</strong> Análise de viabilidade técnica e financeira para implantação de novos Pontos de Entrega Voluntária (PEVs) em diferentes municípios, redes de varejo e empresas parceiras.</li>
+                                <li><strong>Impacto Social & Engajamento:</strong> Fomento a ações de responsabilidade social com catadores e campanhas de conscientização ecológica para engajar o consumidor final.</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-techs">
+                            <span class="tech-pill">SAP ERP</span>
+                            <span class="tech-pill">Logística Reversa</span>
+                            <span class="tech-pill">Economia Circular</span>
+                            <span class="tech-pill">Análise de Custos</span>
+                            <span class="tech-pill">Gestão de Stakeholders</span>
+                            <span class="tech-pill">Estudo de Viabilidade</span>
+                            <span class="tech-pill">KPIs Operacionais</span>
                         </div>
                     </div>
-                    <!-- Project 2 -->
-                    <div class="project-card glass-panel reveal delay-1">
-                        <div class="project-image" style="background: linear-gradient(135deg, #4834D4, #686DE0)"></div>
-                        <div class="project-info">
-                            <div class="project-tags">
-                                <span class="tag">App</span>
-                                <span class="tag">UI/UX</span>
-                            </div>
-                            <h3 class="project-title">App de Finanças</h3>
-                            <p class="project-desc">Aplicativo para controle financeiro pessoal com dashboards interativos e intuitivos.</p>
-                            <a href="#" class="project-link">Ver Detalhes &rarr;</a>
+
+                    <!-- Case 2: FAPESP -->
+                    <div class="case-card glass-panel reveal delay-1" data-category="dados">
+                        <div class="case-badge-row">
+                            <span class="badge-role">Pesquisadora Bolsista</span>
+                            <span class="badge-time">07/2024 - 06/2025</span>
+                            <span class="badge-tag dados">Pesquisa & Data Science</span>
+                        </div>
+                        <h3 class="case-title">Tolerância de Bioindicadores às Mudanças Climáticas & Modelagem Estatística em R (GLMM)</h3>
+                        <div class="case-org">Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP)</div>
+                        
+                        <div class="case-section">
+                            <h4 class="case-heading">Desafio & Escopo:</h4>
+                            <p>Investigar laboratorialmente a tolerância térmica e à dessecação de espécies de cupins com diferentes hábitos de nidificação frente a cenários de aquecimento global, demandando experimentação controlada e modelagem estatística robusta para dados biológicos complexos.</p>
+                        </div>
+
+                        <div class="case-section">
+                            <h4 class="case-heading">Entregas & Soluções Realizadas:</h4>
+                            <ul class="case-bullets">
+                                <li><strong>Metodologia Experimental Autoral:</strong> Concepção e montagem de protocolo científico autoral para avaliação de estresse por dessecação e operação de <strong>termociclador</strong> em laboratório.</li>
+                                <li><strong>Modelagem Estatística Avançada (GLMM):</strong> Tratamento de grande base de dados e aplicação de <strong>Modelos Generalizados Mistos (GLMM) em linguagem R</strong>, controlando efeitos fixos e aleatórios da variabilidade biológica.</li>
+                                <li><strong>Insights Estratégicos & Relatórios Técnicos:</strong> Construção de modelos analíticos que permitiram extrair conclusões ecológicas precisas sobre vulnerabilidade climática, gerando relatórios técnicos e base científica para publicações.</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-techs">
+                            <span class="tech-pill">Linguagem R</span>
+                            <span class="tech-pill">GLMM (Modelos Mistos)</span>
+                            <span class="tech-pill">Análise de Dados Complexos</span>
+                            <span class="tech-pill">Termociclador</span>
+                            <span class="tech-pill">Mudanças Climáticas</span>
+                            <span class="tech-pill">Protocolo Científico</span>
                         </div>
                     </div>
-                    <!-- Project 3 -->
-                    <div class="project-card glass-panel reveal delay-2">
-                        <div class="project-image" style="background: linear-gradient(135deg, #00B894, #00CEC9)"></div>
-                        <div class="project-info">
-                            <div class="project-tags">
-                                <span class="tag">Branding</span>
-                            </div>
-                            <h3 class="project-title">Identidade Visual</h3>
-                            <p class="project-desc">Criação de marca e manual de identidade visual para uma startup de tecnologia.</p>
-                            <a href="#" class="project-link">Ver Detalhes &rarr;</a>
+
+                    <!-- Case 3: Franco da Rocha -->
+                    <div class="case-card glass-panel reveal" data-category="urbano">
+                        <div class="case-badge-row">
+                            <span class="badge-role">Projeto de Engenharia Urbana</span>
+                            <span class="badge-time">2026</span>
+                            <span class="badge-tag urbano">Planejamento & SIG</span>
+                        </div>
+                        <h3 class="case-title">Diagnóstico Territorial, Proposição de Centralidades e Matriz de Aptidão</h3>
+                        <div class="case-org">Franco da Rocha / SP • Projeto Ambiental Urbano</div>
+                        
+                        <div class="case-section">
+                            <h4 class="case-heading">Desafio & Escopo:</h4>
+                            <p>Desenvolver um diagnóstico territorial detalhado para propor o adensamento e concentração de funções urbanas ao redor do eixo ferroviário de Franco da Rocha/SP, estruturando uma proposta sustentável para um terceiro centro urbano em expansão.</p>
+                        </div>
+
+                        <div class="case-section">
+                            <h4 class="case-heading">Entregas & Soluções Realizadas:</h4>
+                            <ul class="case-bullets">
+                                <li><strong>Análise Espacial Multicritério com QGIS:</strong> Cruzamento de camadas geoespaciais de declividade, uso e ocupação do solo, riscos geológicos (escorregamentos/inundações) e índices de vulnerabilidade social.</li>
+                                <li><strong>Construção de Matriz de Aptidão Territorial:</strong> Modelagem matricial para identificar a capacidade de suporte e vocação da gleba de expansão, orientando zoneamentos urbanísticos e corredores de mobilidade.</li>
+                                <li><strong>Relatórios de Restrições Ambientais:</strong> Elaboração de mapas temáticos e peças técnicas cartográficas de suporte à tomada de decisão para intervenções urbanas resilientes às intempéries climáticas.</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-techs">
+                            <span class="tech-pill">QGIS</span>
+                            <span class="tech-pill">Geoprocessamento (SIG)</span>
+                            <span class="tech-pill">Matriz de Aptidão</span>
+                            <span class="tech-pill">Riscos Geológicos</span>
+                            <span class="tech-pill">Vulnerabilidade Social</span>
+                            <span class="tech-pill">Planejamento Urbano</span>
                         </div>
                     </div>
+
+                    <!-- Case 4: Saneamento Comunitário -->
+                    <div class="case-card glass-panel reveal delay-1" data-category="urbano">
+                        <div class="case-badge-row">
+                            <span class="badge-role">Projeto de Extensão & Coautoria</span>
+                            <span class="badge-time">03/2026 - Atualmente</span>
+                            <span class="badge-tag urbano">Saneamento & Recursos</span>
+                        </div>
+                        <h3 class="case-title">Tecnologias Alternativas de Tratamento de Águas e Esgotos & Livro-Texto</h3>
+                        <div class="case-org">UFABC • Projeto de Extensão Universitária</div>
+                        
+                        <div class="case-section">
+                            <h4 class="case-heading">Desafio & Escopo:</h4>
+                            <p>Desenvolver e disseminar soluções de saneamento ecológico, abastecimento de água potável descentralizado e recuperação de nutrientes/recursos para comunidades isoladas e vulneráveis sem acesso a redes convencionais.</p>
+                        </div>
+
+                        <div class="case-section">
+                            <h4 class="case-heading">Entregas & Soluções Realizadas:</h4>
+                            <ul class="case-bullets">
+                                <li><strong>Coautoria e Escrita Técnica:</strong> Redação, revisão aprofundada e estruturação de capítulos de livro-texto técnico abordando sistemas alternativos de abastecimento hídrico e esgotamento sanitário.</li>
+                                <li><strong>Diagramação & Comunicação Visual:</strong> Diagramação e elaboração de figuras explicativas e esquemáticos de engenharia para facilitar a transmissão do conhecimento a técnicos e comunidades.</li>
+                                <li><strong>Foco em Recuperação de Recursos:</strong> Abordagem voltada à economia circular hídrica, reaproveitamento de águas cinzas e valorização de subprodutos do tratamento.</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-techs">
+                            <span class="tech-pill">Saneamento Descentralizado</span>
+                            <span class="tech-pill">Tratamento de Efluentes</span>
+                            <span class="tech-pill">Recuperação de Recursos</span>
+                            <span class="tech-pill">Comunicação Científica</span>
+                            <span class="tech-pill">Diagramação Técnica</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 5: Inventários GEE -->
+                    <div class="case-card glass-panel reveal" data-category="esg">
+                        <div class="case-badge-row">
+                            <span class="badge-role">Capacitação & Aplicação</span>
+                            <span class="badge-time">2026</span>
+                            <span class="badge-tag esg">Clima & Carbono</span>
+                        </div>
+                        <h3 class="case-title">Inventários Corporativos de Gases de Efeito Estufa (GHG Protocol)</h3>
+                        <div class="case-org">Capacitação Técnica e Modelagem de Emissões</div>
+                        
+                        <div class="case-section">
+                            <h4 class="case-heading">Desafio & Escopo:</h4>
+                            <p>Capacitação e aplicação das diretrizes metodológicas do <strong>GHG Protocol Corporate Standard</strong> para contabilidade e gestão estratégica de emissões de carbono nos três escopos de relato.</p>
+                        </div>
+
+                        <div class="case-section">
+                            <h4 class="case-heading">Entregas & Soluções Realizadas:</h4>
+                            <ul class="case-bullets">
+                                <li><strong>Cálculo de Escopos 1, 2 e 3:</strong> Domínio prático de fatores de emissão, fronteiras organizacionais e operacionais, emissões fugitivas, combustão móvel/estacionária e energia comprada.</li>
+                                <li><strong>Escopo 3 e Cadeia de Suprimentos:</strong> Mapeamento das emissões indiretas mais críticas na cadeia de valor, essencial para o alinhamento a metas Science-Based Targets (SBTi) e relatórios CDP/ISSB.</li>
+                                <li><strong>Planos de Mitigação:</strong> Identificação de gargalos energéticos e de transporte para estruturação de metas de descarbonização corporativa.</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-techs">
+                            <span class="tech-pill">GHG Protocol</span>
+                            <span class="tech-pill">Escopos 1, 2 e 3</span>
+                            <span class="tech-pill">Contabilidade de Carbono</span>
+                            <span class="tech-pill">Descarbonização</span>
+                            <span class="tech-pill">TCFD / ISSB</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 6: SUGEPE UFABC -->
+                    <div class="case-card glass-panel reveal delay-1" data-category="governanca">
+                        <div class="case-badge-row">
+                            <span class="badge-role">Estagiária de RH & Governança</span>
+                            <span class="badge-time">01/2024 - 06/2024</span>
+                            <span class="badge-tag governanca">Compliance & Processos</span>
+                        </div>
+                        <h3 class="case-title">Governança de Dados, Padronização e Compliance em Processos Públicos</h3>
+                        <div class="case-org">Superintendência de Gestão de Pessoas (SUGEPE) • UFABC</div>
+                        
+                        <div class="case-section">
+                            <h4 class="case-heading">Desafio & Escopo:</h4>
+                            <p>Assegurar a estrita legalidade, segurança jurídica e cumprimento de prazos em processos seletivos públicos e rotinas de promoção funcional, em um ambiente de alto rigor regulatório governamental.</p>
+                        </div>
+
+                        <div class="case-section">
+                            <h4 class="case-heading">Entregas & Soluções Realizadas:</h4>
+                            <ul class="case-bullets">
+                                <li><strong>Liderança em Melhoria Contínua:</strong> Padronização de documentos operacionais e estruturação da governança da informação interna, otimizando o tempo de consulta e facilitando auditorias de processos.</li>
+                                <li><strong>Compliance Estrito & Editais Públicos:</strong> Garantia de conformidade legal de editais e etapas de seleção pública, mitigando riscos de impugnação jurídica.</li>
+                                <li><strong>Gestão Operacional de Pessoas:</strong> Condução de entrevistas, elaboração de minutas contratuais e relatórios gerenciais com garantia de cumprimento rigoroso de SLAs.</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-techs">
+                            <span class="tech-pill">Compliance Público</span>
+                            <span class="tech-pill">Governança da Informação</span>
+                            <span class="tech-pill">Padronização de Processos</span>
+                            <span class="tech-pill">Auditoria</span>
+                            <span class="tech-pill">Controle de SLAs</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
+        <!-- Seção de Habilidades Técnicas Categorizadas -->
         <section id="habilidades" class="section">
             <div class="container">
-                <h2 class="section-title reveal">Habilidades</h2>
-                <div class="skills-container reveal delay-1">
-                    <div class="skill-category glass-panel">
-                        <h3>Frontend</h3>
+                <div class="section-header reveal">
+                    <span class="section-tag">Competências & Stack</span>
+                    <h2 class="section-title">Habilidades Técnicas</h2>
+                    <p class="section-subtitle">Ferramentas e frameworks dominados e aplicados em entregas reais.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Sustentabilidade & ESG -->
+                    <div class="skill-category glass-panel reveal">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">🌱</span>
+                            <h3>Sustentabilidade & ESG</h3>
+                        </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3 / SCSS</span>
-                            <span class="skill-tag">JavaScript (ES6+)</span>
-                            <span class="skill-tag">React</span>
+                            <span class="skill-tag highlighted">GHG Protocol (Escopos 1, 2 e 3)</span>
+                            <span class="skill-tag highlighted">Logística Reversa</span>
+                            <span class="skill-tag">Framework GRI</span>
+                            <span class="skill-tag">SASB / ISSB</span>
+                            <span class="skill-tag">TCFD</span>
+                            <span class="skill-tag">Economia Circular</span>
+                            <span class="skill-tag">Sustentabilidade Corporativa</span>
+                            <span class="skill-tag">Responsabilidade Social</span>
                         </div>
                     </div>
-                    <div class="skill-category glass-panel">
-                        <h3>Design & Ferramentas</h3>
+
+                    <!-- Dados & Analytics -->
+                    <div class="skill-category glass-panel reveal delay-1">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">📊</span>
+                            <h3>Dados & Estatística</h3>
+                        </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">Figma</span>
-                            <span class="skill-tag">UI/UX Design</span>
-                            <span class="skill-tag">Git / GitHub</span>
-                            <span class="skill-tag">Design Responsivo</span>
+                            <span class="skill-tag highlighted">Linguagem R (GLMM)</span>
+                            <span class="skill-tag highlighted">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Excel Avançado (Dinâmicas/Fórmulas)</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Power Query</span>
+                            <span class="skill-tag">Google Workspace</span>
+                            <span class="skill-tag">Modelagem Preditiva</span>
+                        </div>
+                    </div>
+
+                    <!-- Geoprocessamento & Engenharia -->
+                    <div class="skill-category glass-panel reveal delay-2">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">🗺️</span>
+                            <h3>Geoprocessamento & SIG</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlighted">QGIS</span>
+                            <span class="skill-tag">ArcGIS</span>
+                            <span class="skill-tag">Google Earth</span>
+                            <span class="skill-tag">Cartografia Temática</span>
+                            <span class="skill-tag">Matrizes de Aptidão Territorial</span>
+                            <span class="skill-tag">Análise Espacial de Uso do Solo</span>
+                            <span class="skill-tag">Avaliação de Riscos Geológicos</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & Infra -->
+                    <div class="skill-category glass-panel reveal">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">☁️</span>
+                            <h3>Cloud & Tecnologia</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS Lambda</span>
+                            <span class="skill-tag">AWS S3</span>
+                            <span class="skill-tag">AWS RDS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">Bancos de Dados Relacionais</span>
+                        </div>
+                    </div>
+
+                    <!-- Gestão & Negócios -->
+                    <div class="skill-category glass-panel reveal delay-1">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">💼</span>
+                            <h3>Gestão & Governança</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlighted">SAP ERP (Pedidos/NFs/Custos)</span>
+                            <span class="skill-tag">Gestão Orçamentária</span>
+                            <span class="skill-tag">Compliance & Segurança Jurídica</span>
+                            <span class="skill-tag">Gestão de Fornecedores</span>
+                            <span class="skill-tag">SLA e Indicadores de Desempenho</span>
+                            <span class="skill-tag">Melhoria Contínua de Processos</span>
+                        </div>
+                    </div>
+
+                    <!-- Comunicação & Liderança -->
+                    <div class="skill-category glass-panel reveal delay-2">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">🎯</span>
+                            <h3>Comunicação & Design</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Apresentações Executivas (PPT)</span>
+                            <span class="skill-tag">Design Vetorial (Canva)</span>
+                            <span class="skill-tag">Redação Técnica & Livros-Texto</span>
+                            <span class="skill-tag">Comunicação Estratégica</span>
+                            <span class="skill-tag">Liderança de Equipes</span>
+                            <span class="skill-tag">Gestão de Canais & Redes</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Liderança, Órgãos Deliberativos & Extensão -->
+        <section id="governanca" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Extensão & Liderança</span>
+                    <h2 class="section-title">Vivência Institucional & Governança</h2>
+                    <p class="section-subtitle">Atuação ativa em espaços de liderança, tomada de decisão estratégica e extensão universitária.</p>
+                </div>
+
+                <div class="leadership-grid">
+                    <div class="leadership-card glass-panel reveal">
+                        <div class="card-meta">
+                            <span class="badge-role">Representante Discente</span>
+                            <span class="badge-time">2023 - 2024</span>
+                        </div>
+                        <h3>Órgãos Deliberativos Superiores da UFABC</h3>
+                        <p class="institution">Conselho Universitário (ConsUni), CONSEPE e Conselho Estratégico de Sustentabilidade</p>
+                        <p class="leadership-desc">
+                            Voz e voto na mais alta instância deliberativa da universidade. Participação na deliberação de diretrizes orçamentárias, políticas de ensino e pesquisa, além de atuação direta no <strong>Conselho Estratégico de Sustentabilidade</strong> para formulação da política socioambiental da instituição.
+                        </p>
+                    </div>
+
+                    <div class="leadership-card glass-panel reveal delay-1">
+                        <div class="card-meta">
+                            <span class="badge-role">Diretora de Marketing & Propaganda</span>
+                            <span class="badge-time">Gestão Estratégica</span>
+                        </div>
+                        <h3>Seiva Jr. • Empresa Júnior de Sustentabilidade da UFABC</h3>
+                        <p class="institution">Consultoria em Sustentabilidade</p>
+                        <p class="leadership-desc">
+                            Liderança de equipe, reposicionamento da identidade visual, cultura interna e planejamento de divulgação dos serviços de consultoria socioambiental. Gestão de cronogramas ágeis, priorização de entregas e acompanhamento de métricas de engajamento institucional.
+                        </p>
+                    </div>
+
+                    <div class="leadership-card glass-panel reveal delay-2">
+                        <div class="card-meta">
+                            <span class="badge-role">Tutora de Extensão</span>
+                            <span class="badge-time">03/2024 - 06/2024</span>
+                        </div>
+                        <h3>Curso de Extensão: XI Antártica ou Antártida</h3>
+                        <p class="institution">UFABC • Divulgação Científica e Educação Polar</p>
+                        <p class="leadership-desc">
+                            Tutoria de estudantes em projeto de extensão científica voltado à conscientização sobre as ciências polares, mudanças climáticas globais e ecossistemas antárticos, traduzindo conhecimento científico para a comunidade.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
         <section id="contato" class="section">
             <div class="container">
                 <div class="contact-box glass-panel reveal">
-                    <h2 class="section-title">Vamos trabalhar juntos?</h2>
-                    <p>Estou sempre aberta a discutir novos projetos, ideias criativas ou oportunidades para fazer parte da sua visão.</p>
-                    <a href="mailto:ola@exemplo.com" class="btn-primary btn-large">Diga Olá</a>
+                    <span class="section-tag">Conexão & Oportunidades</span>
+                    <h2 class="section-title">Vamos conversar sobre novas oportunidades?</h2>
+                    <p>
+                        Estou aberta a oportunidades profissionais, posições em sustentabilidade corporativa/ESG, análise de dados ambientais, engenharia e novos desafios interdisciplinares.
+                    </p>
+                    
+                    <div class="contact-actions">
+                        <a href="mailto:isabelabarretoc@gmail.com" class="btn-primary btn-large">Enviar E-mail</a>
+                    </div>
+
                     <div class="social-links">
-                        <a href="#" class="social-icon">LinkedIn</a>
-                        <a href="#" class="social-icon">GitHub</a>
-                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="https://www.linkedin.com/in/isabela-barreto" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2Z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/isabelabarreto" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+                            GitHub
+                        </a>
                     </div>
                 </div>
             </div>
@@ -160,7 +668,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; <span id="year"></span> Isabela Barreto. Todos os direitos reservados.</p>
+            <p>&copy; <span id="year"></span> Isabela Barreto • Formação Interdisciplinar em Ciência, Tecnologia, Engenharia & Biologia (UFABC).</p>
         </div>
     </footer>
 

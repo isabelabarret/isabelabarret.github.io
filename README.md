@@ -1,6 +1,6 @@
 # Portfólio Interdisciplinar | Isabela Barreto
 
-Este repositório contém o código-fonte do portfólio profissional de **Isabela Barreto**, hospedado via GitHub Pages em [isabelabarreto.github.io](https://isabelabarreto.github.io).
+Este repositório contém o código-fonte do portfólio profissional de **Isabela Barreto**, hospedado via GitHub Pages em [isabelabarret.github.io](https://isabelabarret.github.io).
 
 ## 🎯 Proposta & Posicionamento
 O portfólio destaca a intersecção única entre:
